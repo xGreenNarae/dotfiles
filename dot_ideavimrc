@@ -1,0 +1,37 @@
+set surround
+set easymotion
+set relativenumber
+
+let mapleader=" "
+
+## easymotion
+nmap <Leader>a <Plug>(easymotion-jumptoanywhere)
+
+## intellij actions keymap
+nnoremap <Tab>w :action ReformatCode<CR>
+nnoremap <Tab>e :action ShowIntentionActions<CR>
+nnoremap <Tab>s :action CollapseAllRegions<CR>
+nnoremap <Tab>d :action ExpandAllRegions<CR>
+
+nnoremap <Tab>r :action SurroundWith<CR> ## Wrap 
+
+nnoremap <Space>gd :action GotoDeclaration<CR>
+
+nnoremap <M-k> :action MoveLineUp<CR>
+nnoremap <M-j> :action MoveLineDown<CR>
+
+
+## 일반 keymap ----------------------------------------------
+
+inoremap kj <Esc>l
+
+## navigation 기능 보완
+nnoremap H ^
+nnoremap dH d^
+nnoremap cH c^
+vnoremap H ^
+
+nnoremap L $
+nnoremap dL d$
+nnoremap cL c$
+vnoremap L $

@@ -1,0 +1,30 @@
+set nocompatible
+
+if has("syntax")
+	syntax on
+endif
+
+set autoindent
+set smartindent
+
+set ts=4 " Tab Space
+set shiftwidth=4 " auto indent width
+
+set number
+
+" keymap ----------------------------------------------
+
+inoremap kj <Esc>l
+
+" navigation
+
+nnoremap H ^
+nnoremap dH d^
+nnoremap cH c^
+vnoremap H ^
+
+nnoremap L $
+nnoremap dL d$
+nnoremap cL c$
+vnoremap L $
+
