@@ -1,11 +1,11 @@
 set surround
 set easymotion
-set relativenumber
 
-let mapleader=" "
+set relativenumber
+set number
 
 ## easymotion
-nmap <Leader>a <Plug>(easymotion-jumptoanywhere)
+nmap s <Plug>(easymotion-jumptoanywhere)
 
 ## intellij actions keymap
 nnoremap <Tab>w :action ReformatCode<CR>
@@ -13,7 +13,7 @@ nnoremap <Tab>e :action ShowIntentionActions<CR>
 nnoremap <Tab>s :action CollapseAllRegions<CR>
 nnoremap <Tab>d :action ExpandAllRegions<CR>
 
-nnoremap <Tab>r :action SurroundWith<CR> ## Wrap 
+nnoremap <Tab>r :action SurroundWith<CR> ## Wrap
 
 nnoremap <Space>gd :action GotoDeclaration<CR>
 
@@ -26,12 +26,19 @@ nnoremap <M-j> :action MoveLineDown<CR>
 inoremap kj <Esc>l
 
 ## navigation 기능 보완
-nnoremap H ^
-nnoremap dH d^
-nnoremap cH c^
-vnoremap H ^
+nmap H ^
+nmap cH c^
+nmap dH d^
+nmap yH y^
+vmap H ^
 
-nnoremap L $
-nnoremap dL d$
-nnoremap cL c$
-vnoremap L $
+nmap L $
+nmap cL c$
+nmap dL d$
+nmap yL y$
+vmap L $
+
+
+
+
+
