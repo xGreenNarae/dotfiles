@@ -15,17 +15,11 @@ set number
 
 " keymap ----------------------------------------------
 
-inoremap kj <Esc>l
-
 " navigation
 
 nnoremap H ^
-nnoremap dH d^
-nnoremap cH c^
 vnoremap H ^
 
 nnoremap L $
-nnoremap dL d$
-nnoremap cL c$
 vnoremap L $
 

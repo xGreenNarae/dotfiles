@@ -1,11 +1,17 @@
 set surround
 set easymotion
+set argtextobj
+set exchange
 
 set relativenumber
 set number
 
 ## easymotion
 nmap s <Plug>(easymotion-jumptoanywhere)
+
+## NERD Tree
+Plug 'preservim/nerdtree'
+nnoremap <Tab>f :NERDTreeFind<CR>
 
 ## intellij actions keymap
 nnoremap <Tab>w :action ReformatCode<CR>
@@ -23,19 +29,11 @@ nnoremap <M-j> :action MoveLineDown<CR>
 
 ## 일반 keymap ----------------------------------------------
 
-inoremap kj <Esc>l
-
 ## navigation 기능 보완
 nmap H ^
-nmap cH c^
-nmap dH d^
-nmap yH y^
 vmap H ^
 
 nmap L $
-nmap cL c$
-nmap dL d$
-nmap yL y$
 vmap L $
 
 
