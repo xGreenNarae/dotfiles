@@ -13,12 +13,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # Alias
 ZSH_THEME="simple"
 
-alias vim=lvim
+alias vim=nvim
 function ls() {
-  eza "$@"
+    eza -al
 }
 function cd_ls() {
-  cd "$@" && ls -al
+    cd "$@" && ls -al
 }
 alias cd='cd_ls'
 

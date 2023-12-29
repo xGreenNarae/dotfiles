@@ -1,27 +1,38 @@
 set surround
 set easymotion
 set argtextobj
-set exchange
 
 set relativenumber
 set number
+
 
 ## easymotion
 nmap s <Plug>(easymotion-jumptoanywhere)
 
 ## NERD Tree
 Plug 'preservim/nerdtree'
-nnoremap <Tab>f :NERDTreeFind<CR>
+nnoremap <Space>e :NERDTreeFind<CR>
 
 ## intellij actions keymap
-nnoremap <Tab>w :action ReformatCode<CR>
-nnoremap <Tab>e :action ShowIntentionActions<CR>
-nnoremap <Tab>s :action CollapseAllRegions<CR>
-nnoremap <Tab>d :action ExpandAllRegions<CR>
+# action + ?
 
-nnoremap <Tab>r :action SurroundWith<CR> ## Wrap
+# format
+nnoremap <Space>af :action ReformatCode<CR>
 
-nnoremap <Space>gd :action GotoDeclaration<CR>
+# quick action
+nnoremap <Space>aq :action ShowIntentionActions<CR>
+
+# refactoring 
+nnoremap <Space>ar :action Refactorings.QuickListPopupAction<CR>
+
+# surround
+nnoremap <Space>as :action SurroundWith<CR>
+
+# fold - collapse/expand 
+nnoremap <Space>fc :action CollapseAllRegions<CR>
+nnoremap <Space>fe :action ExpandAllRegions<CR>
+
+
 
 nnoremap <M-k> :action MoveLineUp<CR>
 nnoremap <M-j> :action MoveLineDown<CR>
