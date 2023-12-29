@@ -15,22 +15,15 @@ nnoremap <Space>e :NERDTreeFind<CR>
 
 ## intellij actions keymap
 # action + ?
+nnoremap <Space>arc :action ReformatCode<CR>
+nnoremap <Space>arf :action Refactorings.QuickListPopupAction<CR>
+nnoremap <Space>aia :action ShowIntentionActions<CR>
+nnoremap <Space>asw :action SurroundWith<CR>
+nnoremap <Space>aoi :action OptimizeImports<CR>
 
-# format
-nnoremap <Space>af :action ReformatCode<CR>
-
-# quick action
-nnoremap <Space>aq :action ShowIntentionActions<CR>
-
-# refactoring 
-nnoremap <Space>ar :action Refactorings.QuickListPopupAction<CR>
-
-# surround
-nnoremap <Space>as :action SurroundWith<CR>
-
-# fold - collapse/expand 
-nnoremap <Space>fc :action CollapseAllRegions<CR>
-nnoremap <Space>fe :action ExpandAllRegions<CR>
+# fold
+nnoremap <Space>fca :action CollapseAllRegions<CR>
+nnoremap <Space>fea :action ExpandAllRegions<CR>
 
 
 
