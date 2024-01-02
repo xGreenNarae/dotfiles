@@ -17,6 +17,8 @@ nnoremap <Space>e :NERDTreeFind<CR>
 
 nnoremap <Space>h :action ShowHoverInfo<CR>
 
+nnoremap <Space><Space> :action SearchEverywhere<CR>
+
 # (code) action + ?
 nnoremap <Space>af :action ReformatCode<CR>
 nnoremap <Space>ar :action Refactorings.QuickListPopupAction<CR>
